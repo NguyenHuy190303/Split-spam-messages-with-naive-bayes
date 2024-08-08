@@ -34,7 +34,6 @@ pip install nltk pandas numpy scikit-learn
 **Make Predictions:** Use the trained model to classify new, unseen messages.
 ## Usage Example
 ```python
-Sao chép mã
 from sklearn.naive_bayes import GaussianNB
 
 # Assuming data is already preprocessed and split
