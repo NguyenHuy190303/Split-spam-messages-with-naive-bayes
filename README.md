@@ -25,9 +25,22 @@ The project is implemented in Python, and the following libraries are required:
 To install these dependencies, run:
 ```bash
 pip install nltk pandas numpy scikit-learn
+```
 ## Running the Project
-Load the Dataset: Download the dataset and load it into the environment.
-Preprocess the Data: Clean and preprocess the text data.
-Train the Model: Train the Naive Bayes classifier using the preprocessed data.
-Evaluate the Model: Test the model on validation and test sets.
-Make Predictions: Use the trained model to classify new, unseen messages.
+**Load the Dataset:** Download the dataset and load it into the environment.
+**Preprocess the Data:** Clean and preprocess the text data.
+**Train the Model:** Train the Naive Bayes classifier using the preprocessed data.
+**Evaluate the Model:** Test the model on validation and test sets.
+**Make Predictions:** Use the trained model to classify new, unseen messages.
+## Usage Example
+```python
+Sao chép mã
+from sklearn.naive_bayes import GaussianNB
+
+# Assuming data is already preprocessed and split
+model = GaussianNB()
+model.fit(X_train, y_train)
+
+# Prediction
+prediction = model.predict(X_new)
+print("Spam" if prediction == 1 else "Ham")```
