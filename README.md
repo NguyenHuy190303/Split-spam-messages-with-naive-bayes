@@ -42,4 +42,16 @@ model.fit(X_train, y_train)
 
 # Prediction
 prediction = model.predict(X_new)
-print("Spam" if prediction == 1 else "Ham")```
+print("Spam" if prediction == 1 else "Ham")
+```
+
+## Evaluation
+The model's performance is evaluated using accuracy scores on both the validation and test datasets.
+## Authors
+**Dinh-Thang Duong
+Anh-Khoi Nguyen
+Quang-Vinh Dinh**
+
+## Acknowledgments
+This project is part of the AI Viet Nam – AI Course 2024 curriculum.
+
